@@ -76,6 +76,20 @@ int main()
     cout << "Never attempt to dereference a null pointer" << endl;
     
     //  8. new DataType[intExp]; allocate an array of variables
+    //  Declare an array of 10 consecutive integers, address of the first element is placed in first.
+    int* first = new int[10];
+    
+    //  9. Dynamic array can be accessed using the access operator for arrays; first[2] = 50;
+    //  Accessing an element of the array does not affect the position of the pointer.
+    for (int j = 0; j < 10; j++)
+    {
+        first[j] = j * j;
+    }
+    
+    for (int f = 0; f < 10; f++)
+    {
+        cout << f << " element in the array has a value of: " << first[f] << endl;
+    }
     
     return 0;
 }
