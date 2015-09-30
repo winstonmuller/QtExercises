@@ -1,0 +1,1 @@
+Project to help remember pointer syntax.
