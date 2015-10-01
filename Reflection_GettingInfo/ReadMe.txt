@@ -1,0 +1,1 @@
+Write a program that creates instances of the following classes - QSpinBox, QProcess, QTimer, and shows the user a list of the properties (and values, for those that can convert to a QString), plus a list of all the method names.
