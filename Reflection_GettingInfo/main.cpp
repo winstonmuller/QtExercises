@@ -15,12 +15,15 @@ int main(int argc, char *argv[])
 
     QSpinBox* spinBox = new QSpinBox;
     ref.Reflect(cout, spinBox);
+    delete spinBox;
 
     QProcess* proc = new QProcess;
     ref.Reflect(cout, proc);
+    delete proc;
 
     QTimer* timer = new QTimer;
     ref.Reflect(cout, timer);
+    delete timer;
 
     return a.exec();
 }

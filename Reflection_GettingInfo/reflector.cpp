@@ -11,7 +11,7 @@ void Reflector::Reflect(QTextStream& cout, const QObject* widget)
     cout << QString("Retrieving data for the class %1").arg(metaObj->className()) << endl;
     cout << QString("Number of methods: %1").arg(metaObj->methodCount()) << endl;
 
-    //  Show properties, their values (if QString), and all the method names
+    //  Show properties, their values (if String)
     for (int i = 0; i < metaObj->propertyCount(); i++)
     {
         const QMetaProperty qpm = metaObj->property(i);
@@ -34,6 +34,4 @@ void Reflector::Reflect(QTextStream& cout, const QObject* widget)
 
     cout << "Reflection Complete" << endl;
     cout << endl;
-    cout << endl;
-
 }
