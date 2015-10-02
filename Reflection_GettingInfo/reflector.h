@@ -16,7 +16,7 @@ class Reflector
 {
 public:
     Reflector();
-    void Reflect(QTextStream& cout, const QWidget* widget);
+    void Reflect(QTextStream& cout, const QObject* widget);
 };
 
 #endif // REFLECTOR_H

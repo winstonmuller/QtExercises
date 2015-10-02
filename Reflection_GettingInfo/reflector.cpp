@@ -4,9 +4,7 @@ Reflector::Reflector()
 {
 }
 
-//  ifstream& openfile(ifstream &filename)
-
-void Reflector::Reflect(QTextStream& cout, const QWidget* widget)
+void Reflector::Reflect(QTextStream& cout, const QObject* widget)
 {
     const QMetaObject* metaObj = widget->metaObject();
 
@@ -35,5 +33,7 @@ void Reflector::Reflect(QTextStream& cout, const QWidget* widget)
     }
 
     cout << "Reflection Complete" << endl;
+    cout << endl;
+    cout << endl;
 
 }
