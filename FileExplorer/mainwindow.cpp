@@ -77,5 +77,14 @@ void MainWindow::on_upButton_clicked()
 
 MainWindow::~MainWindow()
 {
+    //  Not required since memory is released when app closes
+    //	but let's get in the habit.
+    delete treeView;
+    delete listView;
     
+    delete dirmodel;
+    delete filemodel;
+    
+    delete upButton;
+    delete txtAddress;    
 }
