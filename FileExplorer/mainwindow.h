@@ -1,23 +1,20 @@
-#ifndef DIALOG_H
-#define DIALOG_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
-#include <QtCore>
+#include <QMainWindow>
 #include <QtWidgets>
-#include <QtGui>
-#include <QFileSystemModel>
 #include <QTreeView>
 #include <QListView>
+#include <QFileSystemModel>
+#include <QSplitter>
 
-namespace Ui {
-class Dialog;
-}
-
-class Dialog : public QObject
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
     
 public:
-    explicit Dialog(QObject *parent = 0);
+    MainWindow(QWidget *parent = 0);
+    ~MainWindow();
     
 private slots:
     void on_treeView_clicked(const QModelIndex &index);
@@ -26,10 +23,9 @@ private:
     QTreeView* treeView;
     QListView* listView;
     
-    
     QFileSystemModel *dirmodel;
     QFileSystemModel *filemodel;
     
 };
 
-#endif // DIALOG_H
+#endif
