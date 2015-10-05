@@ -13,11 +13,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    cfilesystemmodel.cpp \
-    ctableview.cpp
+    dialog.cpp
 
 HEADERS  += \
-    cfilesystemmodel.h \
-    ctableview.h
+    dialog.h
 
-FORMS    += mainwindow.ui
+FORMS    +=
