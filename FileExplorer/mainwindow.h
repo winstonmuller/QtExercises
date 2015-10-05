@@ -3,10 +3,7 @@
 
 #include <QMainWindow>
 #include <QtWidgets>
-#include <QTreeView>
-#include <QListView>
-#include <QFileSystemModel>
-#include <QSplitter>
+
 
 class MainWindow : public QMainWindow
 {
@@ -18,6 +15,7 @@ public:
     
 private slots:
     void on_treeView_clicked(const QModelIndex &index);
+    void on_upButton_clicked();
     
 private:
     QTreeView* treeView;
@@ -25,6 +23,9 @@ private:
     
     QFileSystemModel *dirmodel;
     QFileSystemModel *filemodel;
+    
+    QPushButton *upButton;
+    QLineEdit *txtAddress;
     
 };
 
