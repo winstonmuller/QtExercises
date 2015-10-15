@@ -1,0 +1,12 @@
+Examples of the following UI layouts:
+
+MainWindow with splitters:
+https://github.com/winstonmuller/QtExercises/blob/master/FileExplorer/mainwindow.cpp
+
+ViewModel Dialog:
+https://github.com/winstonmuller/QtExercises/blob/master/DirMod/dialog.cpp
+
+Console Application:
+https://github.com/winstonmuller/QtExercises/blob/master/Reflection_GettingInfo/main.cpp
+
+MainWindow with FormLayout:
