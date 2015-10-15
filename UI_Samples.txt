@@ -10,3 +10,4 @@ Console Application:
 https://github.com/winstonmuller/QtExercises/blob/master/Reflection_GettingInfo/main.cpp
 
 MainWindow with FormLayout:
+https://github.com/winstonmuller/QtExercises/blob/master/LayoutMainWindow/mainwindow.cpp
